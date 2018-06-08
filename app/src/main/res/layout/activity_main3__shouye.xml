@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Main3_ShouyeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mtoobal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/mxmpd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:gravity="left"
+            android:text="熊猫频道"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/mxongmao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/about_sign" />
+
+    <ImageView
+        android:id="@+id/mgeren"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="14dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/mhudong"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_margin="14dp"
+        android:layout_toLeftOf="@id/mgeren"
+        android:src="@drawable/ic_launcher_background" />
+
+
+    <LinearLayout
+        android:id="@+id/mTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/mshouye_rb"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_background"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/mguancha_rb"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_background"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/mzhibo_rb"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_background"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/mchana_rb"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_background"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/mcctv_rb"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_background"
+                android:layout_marginRight="10dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mFamelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/mTablayout"
+        android:layout_below="@id/mtoobal"
+        android:layout_margin="5dp">
+
+    </FrameLayout>
+</RelativeLayout>
